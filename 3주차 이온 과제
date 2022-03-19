@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+
+int main(void)
+{
+	int inum[6];
+	int isum = 0;
+	int icount;
+	printf("숫자6개를입력하시오: ");
+	scanf("%d, %d, %d, %d, %d, %d", &inum[0], &inum[1], &inum[2], &inum[3], &inum[4], &inum[5]);
+	for (icount = 0; icount < 6; icount++)
+	{
+		isum += inum[icount];
+	};
+	printf("6개숫자의합은 %d 입니다", isum);
+	return 0;
+}
