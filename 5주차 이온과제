@@ -1,0 +1,14 @@
+array = list(map(int,input("숫자를 입력하시오: ").split()))
+commands = list(map(int,input("i, j, k: ").split()))
+
+def solution(array, commands):
+    i = commands[0]
+    j = commands[1]
+    k = commands[2]
+
+    arr = array[i-1:j]
+    arr.sort()
+
+    result = print("{0}를 {1}번째부터 {2}번째까지 자른 후 정렬합니다.{3}의 {4} 번째 숫자는 {5}입니다.".format(array,commands[0],commands[1],arr,commands[2],arr[k]-1))
+    return result
+print(solution(array, commands))
